@@ -14,6 +14,12 @@
 		3931454A1EF10D97008E1071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393145481EF10D97008E1071 /* LaunchScreen.storyboard */; };
 		393145551EF10D98008E1071 /* EncryptedNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145541EF10D98008E1071 /* EncryptedNoteTests.swift */; };
 		393145601EF10D98008E1071 /* EncryptedNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931455F1EF10D98008E1071 /* EncryptedNoteUITests.swift */; };
+		393145AA1EF268A3008E1071 /* CSInitializeNoteVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145A91EF268A3008E1071 /* CSInitializeNoteVc.swift */; };
+		393145AC1EF27127008E1071 /* CSSecureInfoInputVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145AB1EF27126008E1071 /* CSSecureInfoInputVc.swift */; };
+		393145AE1EF2777B008E1071 /* UtiliFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145AD1EF2777B008E1071 /* UtiliFuncs.swift */; };
+		393145B21EF287C2008E1071 /* CSNoteListVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145B11EF287C2008E1071 /* CSNoteListVc.swift */; };
+		393145B41EF2885B008E1071 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 393145B31EF2885B008E1071 /* a.png */; };
+		393145B61EF28B30008E1071 /* CSNoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393145B51EF28B30008E1071 /* CSNoteListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		3931455B1EF10D98008E1071 /* EncryptedNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptedNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3931455F1EF10D98008E1071 /* EncryptedNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedNoteUITests.swift; sourceTree = "<group>"; };
 		393145611EF10D98008E1071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		393145A91EF268A3008E1071 /* CSInitializeNoteVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSInitializeNoteVc.swift; sourceTree = "<group>"; };
+		393145AB1EF27126008E1071 /* CSSecureInfoInputVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSecureInfoInputVc.swift; sourceTree = "<group>"; };
+		393145AD1EF2777B008E1071 /* UtiliFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtiliFuncs.swift; sourceTree = "<group>"; };
+		393145B11EF287C2008E1071 /* CSNoteListVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNoteListVc.swift; sourceTree = "<group>"; };
+		393145B31EF2885B008E1071 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		393145B51EF28B30008E1071 /* CSNoteListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNoteListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,14 @@
 			children = (
 				3931453F1EF10D97008E1071 /* AppDelegate.swift */,
 				393145411EF10D97008E1071 /* ViewController.swift */,
+				393145A91EF268A3008E1071 /* CSInitializeNoteVc.swift */,
+				393145AB1EF27126008E1071 /* CSSecureInfoInputVc.swift */,
+				393145B11EF287C2008E1071 /* CSNoteListVc.swift */,
+				393145B51EF28B30008E1071 /* CSNoteListCell.swift */,
+				393145AD1EF2777B008E1071 /* UtiliFuncs.swift */,
 				393145431EF10D97008E1071 /* Main.storyboard */,
 				393145461EF10D97008E1071 /* Assets.xcassets */,
+				393145B31EF2885B008E1071 /* a.png */,
 				393145481EF10D97008E1071 /* LaunchScreen.storyboard */,
 				3931454B1EF10D97008E1071 /* Info.plist */,
 			);
@@ -238,6 +256,7 @@
 				3931454A1EF10D97008E1071 /* LaunchScreen.storyboard in Resources */,
 				393145471EF10D97008E1071 /* Assets.xcassets in Resources */,
 				393145451EF10D97008E1071 /* Main.storyboard in Resources */,
+				393145B41EF2885B008E1071 /* a.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393145B21EF287C2008E1071 /* CSNoteListVc.swift in Sources */,
+				393145AA1EF268A3008E1071 /* CSInitializeNoteVc.swift in Sources */,
+				393145B61EF28B30008E1071 /* CSNoteListCell.swift in Sources */,
 				393145421EF10D97008E1071 /* ViewController.swift in Sources */,
+				393145AC1EF27127008E1071 /* CSSecureInfoInputVc.swift in Sources */,
+				393145AE1EF2777B008E1071 /* UtiliFuncs.swift in Sources */,
 				393145401EF10D97008E1071 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +540,7 @@
 				393145661EF10D98008E1071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		393145671EF10D98008E1071 /* Build configuration list for PBXNativeTarget "EncryptedNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				393145691EF10D98008E1071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3931456A1EF10D98008E1071 /* Build configuration list for PBXNativeTarget "EncryptedNoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				3931456C1EF10D98008E1071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

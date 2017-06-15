@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow()
+        let mainSb = UIStoryboard(name: "Main", bundle: nil)
+        let initalizeNoteVc = mainSb.instantiateViewController(withIdentifier: "CSInitializeNoteVc")
+        
+        let nav = UINavigationController(rootViewController: initalizeNoteVc)
+        nav.navigationBar.barStyle = .blackOpaque
+        nav.isNavigationBarHidden = true
+        
+        nav.navigationBar.tintColor = UIColor.white
+        nav.navigationBar.barTintColor = colorFromRGB(r: 50, g: 50, b: 50)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
         return true
     }
 
